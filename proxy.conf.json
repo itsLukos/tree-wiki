@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://trefle.io",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
