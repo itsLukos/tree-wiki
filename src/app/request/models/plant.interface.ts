@@ -10,15 +10,4 @@ export interface PlantInterface {
   distribution: string;
 }
 
-export interface PlantResponseInterface {
-  data: PlantInterface[];
-  meta: {
-    total: number;
-  };
-  links: {
-    self: string;
-    first: string;
-    next: string;
-    last: string;
-  };
-}
+export interface PlantResponseInterface extends Array<PlantInterface> {}
