@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SearchComponent } from './components/search/search.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    ReactiveFormsModule
   ],
   imports: [
     BrowserModule,
