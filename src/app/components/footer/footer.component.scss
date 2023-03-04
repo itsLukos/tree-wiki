@@ -1,31 +1,14 @@
-// 
-//   background: #111;
-// }
+a {
+  margin: 15px;
+  padding: 15px;
+}
 
-// .footerdiv {
-//   width: 100%;
-//   position: fixed;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-// }
-// a {
-//   margin: 15px;
-//   padding: 15px;
-// }
-// a:hover {
-//   background-color: green;
-// }
+a:hover {
+  background-color: green;
+}
 
-// .reach {
-//   text-align: center;
-//   color: white;
-// }
-// .mailme {
-//   text-decoration: none;
-// }
-
-footer{
+footer {
+  margin: 0;
   width: 100%;
   padding: 20px;
   color: white;
