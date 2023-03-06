@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { DetailComponent } from './detail/detail.component';
 import { PlantSearchPipe } from './components/search/plantsearch.pipe';
+import { PaginationPipe } from './pipes/pagination.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PlantSearchPipe } from './components/search/plantsearch.pipe';
     SearchComponent,
     DetailComponent,
     PlantSearchPipe,
+    PaginationPipe
   ],
   imports: [
     BrowserModule,

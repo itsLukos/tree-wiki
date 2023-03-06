@@ -10,6 +10,9 @@ import { RequestService } from './services/request.service';
 })
 export class RequestComponent implements OnInit {
   PlantList: PlantInterface[] = [];
+  page: number = 1;
+  itemsPerPage: number = 25;
+  numPages: number = 1;
 
   constructor(private requestService: RequestService) {}
   
@@ -30,6 +33,24 @@ export class RequestComponent implements OnInit {
         distribution,
       }));
       this.PlantList = formattedResults;
+
+      this.numPages = results.length / this.itemsPerPage;
     });
+  }
+
+  firstPage() {
+    this.page = 1;
+  }
+
+  lastPage() {
+    this.page = this.numPages;
+  }
+
+  nextPage() {
+    this.page++;
+  }
+
+  prevPage() {
+    this.page--;
   }
 }

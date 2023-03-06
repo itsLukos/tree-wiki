@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { PlantInterface, PlantResponseInterface } from 'src/app/request/models/plant.interface';
 import { RequestService } from 'src/app/request/services/request.service';
 
@@ -38,12 +38,4 @@ export class SearchComponent {
       });
   }
 
-  //searchPlant(): void {
-  //  console.log("onChange!!")
-  //  this.PlantList = this.AllPlants.filter(result => {
-  //    Object.entries(result).forEach(([key, value]) => {
-  //      value.toString().includes('search');
-  //    });
-  //  });
-  //}
 }

@@ -1,5 +1,5 @@
 <div *ngIf="PlantList">
-  <div *ngFor="let Plant of PlantList; index as i;" class="plant-card">
+  <div *ngFor="let Plant of (PlantList | paginationPipe: page: itemsPerPage)" class="plant-card">
     <a [routerLink]="['/detail']" [queryParams]="{id: Plant.id }">
       <mat-card>
         <mat-card-header>
@@ -12,5 +12,13 @@
         </mat-card-content>
       </mat-card>
     </a>
+  </div>
+
+  <div class="page-select">
+    <button (click)="firstPage()">1</button>
+    <button (click)="prevPage()">Prev</button>
+    <span>{{ page }}</span>
+    <button (click)="nextPage()">Next</button>
+    <button (click)="lastPage()">{{ numPages }}</button>
   </div>
 </div>
