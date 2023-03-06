@@ -5,7 +5,7 @@ import { PlantInterface } from 'src/app/request/models/plant.interface';
 export class PlantSearchPipe implements PipeTransform {
 
   plantHasValue = (plant: PlantInterface, value: string): boolean => {
-    return Object.values(plant).toString().includes(value);
+    return Object.values(plant).toString().toLowerCase().includes(value.toLowerCase());
   }
 
   transform(value: PlantInterface[], searchString: string): PlantInterface[] {

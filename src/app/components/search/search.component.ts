@@ -5,7 +5,7 @@ import { RequestService } from 'src/app/request/services/request.service';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  styleUrls: ['../../request/request.component.scss']
 })
 export class SearchComponent {
   AllPlants: PlantInterface[];

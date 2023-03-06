@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.art {
+    margin:25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 25px;
+    outline: none;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+}
+.art1 {
+    background-color: rgb(81, 165, 81);
+}
+.art2 {
+    background-color: rgb(15, 126, 81);
+}
+.art3 {
+    background-color: rgb(20, 115, 125);
+}
+.art4 {
+    background-color: rgb(24, 78, 117);
+}

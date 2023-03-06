@@ -1,7 +1,16 @@
-// * {
-//     background-color: black;
-// }
-// div1. {
-//     color: white;
-//     text-align: center;
-// }
+* {
+    background-color: black;
+}
+.name {
+    padding-top: 25px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.foto {
+    width:250px;
+     height: auto; 
+    border-radius: 25%;
+    
+    }

@@ -1,12 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 * {
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
-footer {
-  margin-top: 93%;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
+.search {
+  margin-left: 70px;
+ width: 90%;
+ height: 10%;
+ position: relative;
+ display: flex;
+
+}
+
+.searchTerm {
+ width: 100%;
+ background-color: white;
+ border: 3px solid #00B4CC;
+ border-right: none;
+ padding: 25px;
+ height: 20px;
+ border-radius: 5px 0 0 5px;
+ outline: none;
+ color: #9DBFAF;
+ font-size: larger;
+}
+
+.searchTerm:focus{
+ color: #00B4CC;
+}
+
+.searchButton {
+ width: 80px;
+ height: 80px;
+ border: 1px solid #00B4CC;
+ background: #00B4CC;
+ text-align: center;
+ color: #fff;
+ border-radius: 0 5px 5px 0;
+ cursor: pointer;
+ font-size: 20px;
 }
 
 .plant-card {
