@@ -47,10 +47,12 @@ export class RequestComponent implements OnInit {
   }
 
   nextPage() {
-    this.page++;
+    if(this.page < this.numPages)
+      this.page++;
   }
 
   prevPage() {
-    this.page--;
+    if(this.page > 1)
+      this.page--;
   }
 }
