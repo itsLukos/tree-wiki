@@ -8,12 +8,15 @@ import { RequestService } from 'src/app/request/services/request.service';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
-  AllPlants: PlantInterface[] = [];
-  PlantList: PlantInterface[] = [];
+  AllPlants: PlantInterface[];
+  PlantList: PlantInterface[];
+  searchString: string;
 
-  constructor(private requestService: RequestService) { }
-
-  @Input() search = '';
+  constructor(private requestService: RequestService) {
+    this.AllPlants = [];
+    this.PlantList = [];
+    this.searchString = '';
+  }
 
   ngOnInit(): void {
     this.requestService.getPlants()
@@ -35,12 +38,12 @@ export class SearchComponent {
       });
   }
 
-  ngOnChange(): void {
-    console.log("onChange!!")
-    this.PlantList = this.AllPlants.filter(result => {
-      Object.entries(result).forEach(([key, value]) => {
-        value.toString().includes('search');
-      });
-    });
-  }
+  //searchPlant(): void {
+  //  console.log("onChange!!")
+  //  this.PlantList = this.AllPlants.filter(result => {
+  //    Object.entries(result).forEach(([key, value]) => {
+  //      value.toString().includes('search');
+  //    });
+  //  });
+  //}
 }

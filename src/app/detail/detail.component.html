@@ -1,0 +1,36 @@
+<div *ngIf="detailPlant">
+  <mat-card>
+    <img mat-card-image src={{detailPlant.image_url}} alt={{detailPlant.common_name}}>
+    <mat-card-header>
+      <mat-card-title>{{ detailPlant.common_name }}</mat-card-title>
+      <mat-card-subtitle>{{ detailPlant.scientific_name }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngIf="detailPlant.distribution">
+        <h3>Distribution</h3>
+        <p>{{ detailPlant.distribution }}</p>
+      </div>
+
+      <div *ngIf="detailPlant.family_common_name">
+        <h3>Family Common Name</h3>
+        <p>{{ detailPlant.family_common_name }}</p>
+      </div>
+
+      <div *ngIf="detailPlant.family">
+        <h3>Family</h3>
+        <p>{{ detailPlant.family }}</p>
+      </div>
+
+      <div *ngIf="detailPlant.duration">
+        <h3>Duration</h3>
+        <p>{{ detailPlant.duration }}</p>
+      </div>
+
+      <div *ngIf="detailPlant.edible">
+        <h3>Edible</h3>
+        <p>{{ detailPlant.edible }}</p>
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+</div>

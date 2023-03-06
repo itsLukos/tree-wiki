@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
-//import { ReactiveFormsModule } from '@angular/forms';
+import { DetailComponent } from './detail/detail.component';
+import { PlantSearchPipe } from './components/search/plantsearch.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { SearchComponent } from './components/search/search.component';
     FooterComponent,
     HomeComponent,
     SearchComponent,
-    //ReactiveFormsModule
+    DetailComponent,
+    PlantSearchPipe,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { SearchComponent } from './components/search/search.component';
     HttpClientModule,
     NgxPaginationModule,
     MatCardModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
   ],
   providers: [RequestService],
   bootstrap: [AppComponent]

@@ -1,15 +1,16 @@
-
 <div *ngIf="PlantList">
-    <div *ngFor="let Plant of PlantList; index as i;" class="plant-card">
-        <mat-card>
-            <mat-card-header>
-                <mat-card-title>{{ Plant.common_name }}</mat-card-title>
-                <mat-card-subtitle>{{ Plant.scientific_name }}</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src={{Plant.image_url}} alt={{Plant.common_name}}>
-            <mat-card-content>
-                <p>{{ Plant.distribution }}</p>
-            </mat-card-content>
-        </mat-card>
-    </div>
+  <div *ngFor="let Plant of PlantList; index as i;" class="plant-card">
+    <a [routerLink]="['/detail']" [queryParams]="{id: Plant.id }">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ Plant.common_name }}</mat-card-title>
+          <mat-card-subtitle>{{ Plant.scientific_name }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src={{Plant.image_url}} alt={{Plant.common_name}}>
+        <mat-card-content>
+          <p>{{ Plant.distribution }}</p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </div>
 </div>
