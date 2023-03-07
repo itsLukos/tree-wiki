@@ -1,11 +1,21 @@
 * {
     background-color: black;
 }
-.name {
-    padding-top: 25px;
-    margin-bottom: 15px;
+.content {
+    padding: 25px;
+    margin: 15px;
     color: white;
     text-align: center;
+    font-size: xx-large;
+}
+p {
+    font-size: large;
+}
+li {
+    color: #50B8D2;
+}
+ul {
+    list-style: none;
 }
 
 .foto {
