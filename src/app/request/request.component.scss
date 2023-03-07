@@ -4,7 +4,7 @@
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
 }
-
+//SEARCH BAR
 .search {
   margin-left: 70px;
  width: 90%;
@@ -43,9 +43,11 @@
  font-size: 20px;
 }
 
+//CARDS
 .plant-card {
   list-style: none;
   display: inline-flex;
+  overflow: hidden;
   width: 300px;
   height: 400px;
   margin: 40px;
@@ -55,4 +57,22 @@ img {
   max-width: 100%;
   max-height: 100%;
   position: relative;
+}
+
+//PAGINACION
+.buttons {
+  text-align: center;
+}
+.ubi {
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15%;
+  font-size: xx-large;
+  background-color: #51A551;
+  color: white;
+}
+.current {
+  margin: 10px;
+  font-size: xx-large;
 }

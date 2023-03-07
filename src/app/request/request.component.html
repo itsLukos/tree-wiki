@@ -14,11 +14,11 @@
     </a>
   </div>
 
-  <div class="page-select">
-    <button (click)="firstPage()">1</button>
-    <button (click)="prevPage()">Prev</button>
-    <span>{{ page }}</span>
-    <button (click)="nextPage()">Next</button>
-    <button (click)="lastPage()">{{ numPages }}</button>
+  <div class="buttons">
+    <button class="ubi" (click)="firstPage()">1</button>
+    <button class="ubi" (click)="prevPage()">Prev</button>
+    <span class="current">{{ page }}</span>
+    <button class="ubi" (click)="nextPage()">Next</button>
+    <button class="ubi" (click)="lastPage()">{{ numPages }}</button>
   </div>
 </div>
