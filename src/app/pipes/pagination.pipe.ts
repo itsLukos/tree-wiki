@@ -7,7 +7,6 @@ import { PlantInterface } from '../request/models/plant.interface';
 export class PaginationPipe implements PipeTransform {
 
   transform(list: PlantInterface[], page: number, itemsPerPage: number): PlantInterface[] {
-    //const numOfPages: number = list.length / itemsPerPage;
     return list.slice((page-1)*itemsPerPage, page*itemsPerPage);
   }
 

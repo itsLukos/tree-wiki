@@ -26,7 +26,6 @@ export class DetailComponent {
           const results: PlantInterface[] = data;
 
           this.detailPlant = results.find(p => p.id == plantId) as PlantInterface;
-          console.log(this.detailPlant)
         })
 
     })
